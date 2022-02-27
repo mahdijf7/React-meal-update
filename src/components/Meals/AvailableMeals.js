@@ -5,11 +5,10 @@ import { useEffect, useState } from 'react';
 
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
-  const [isLoading, setIsloading] = useState(false);
+  const [isLoading, setIsloading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setIsloading(true);
     setError(null);
     const fetchHandler = async () => {
       try {
